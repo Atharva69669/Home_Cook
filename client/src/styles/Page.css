@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.post-container-content {
+  box-shadow: 1px 1px 3px 0px gray;
+  max-width:900px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.post-blog-title {
+  font: "Lato", "sans-serif";
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(27, 27, 27);
+  margin-bottom: 10px;
+}
+
+.post-blog-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.post-blog-author {
+  display: flex;
+  align-items: center; /* y direction*/
+}
+.post-blog-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-blog-date {
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgb(27, 27, 27);
+}
+
+.post-blog-body {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
+  width: 100%;
+}
+ .post-blog-body li {
+  list-style-type: disc;
+ }
+.post-blog-body p {
+  margin-bottom: 20px;
+}
+
+.post-blog-body img {
+  display: block;
+  width: 70%; 
+  height: 500px;
+  margin:20px auto ;
+  object-fit: cover; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+.post-actions{
+  display: flex;
+}
+.post-like,.post-view{
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.post-like .faHeart{
+  padding-right:5px;
+  color: rgb(129, 32, 32);
+}
+.post-view .faEye{
+  padding-right:5px;
+  color: rgb(43, 43, 43);
+}
+
+@media (max-width: 768px) {
+  .post-container-content {
+    padding: 10px;
+    margin:20px;
+  }
+  
+  .post-blog-title {
+    font-size: 24px;
+  }
+  
+  .post-blog-author img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .post-blog-body img {
+    width: 80%; /* Adjust width for smaller screens */
+    max-height: 300px; /* Set a maximum height */
+  }
+  
+}

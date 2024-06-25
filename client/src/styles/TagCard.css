@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+
+.tag-card {
+    width: 300px;
+    margin: 5px 20px;
+    height: 400px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .tag-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tag-card .tag-card-image {
+    margin: auto;
+    width: 100%;
+    height: 60%;
+  }
+  .tag-card .tag-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* tag details --> tag and title */
+  
+  .tag-card .tag-details {
+    padding: 5px 0;
+    margin: 5px 10px;
+    font-family: "Frank Ruhl Libre",sans-serif;
+  }
+  
+  .tag-card .tag-details .tag-title-tag{
+    max-height:90px ;
+  }
+  
+  .tag-title-tag p{
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+  }
+  
+  .tag-title-tag .tag-tag{
+    padding: 5px;
+    font-weight:700;
+    color: #ab0000;
+    text-transform: uppercase;
+  }
+  
+  
+  .tag-title-tag .tag-title {
+    font-size:25px;
+    color: #333;
+    padding: 5px;
+    height: 50px;
+    font-weight:400;
+    text-transform: capitalize;
+  }
+  
+  
+  
+  /* tag-details tag-actions  */
+  .tag-actions {
+    display: flex;
+    height: 50px;
+    align-items: center;
+  }
+  
+  .tag-actions .action {
+    width: 20%;
+    height: 40px;
+    text-align: center;
+  }
+  
+  .tag-actions .action span {
+    margin-left: 5px;
+    color: #232323;
+    font-size: 1.2rem;
+    font-weight:400;
+  }
+  
+
+  .tag-actions .faHeart {
+    color: #850000;
+  }
+  .tag-actions .faEye{
+    color: #232323;
+  }
+  
+
+  .tag-actions .action:hover {
+    cursor: pointer;
+    color: #220000; 
+  }
+
+  .tag-link{
+    text-decoration: none;
+  }
+  

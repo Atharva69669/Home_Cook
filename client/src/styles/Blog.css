@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@700&display=swap");
+
+.publish-blog {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  border: 0.5px solid black;
+  font-family: "Crimson Text", sans-serif;
+  background-image: linear-gradient(to bottom right, #ffffff, #ffdfd1);
+}
+
+.publish-blog h5 {
+  font-weight: 600;
+  color: #333;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif Arial, Helvetica, sans-serif;
+}
+
+.welcome-content {
+  margin: 10px auto;
+  width: 70%;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(75, 0, 0);
+}
+
+.set-title,
+.set-desc,
+.set-coverImage,
+.set-tag {
+  width: 95%;
+  margin: 20px auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+.set-title input[type="text"],
+.set-desc textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid rgb(185, 185, 255);
+}
+
+.set-coverImage input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.set-title input[type="text"]::placeholder,
+.set-desc textarea::placeholder {
+  color: rgb(113, 113, 113);
+  font-weight: 500;
+}
+.set-tag select{
+  margin:10px;
+  font-size: 1.2em;
+}
+
+.texteditor {
+  width: 95%;
+  margin: 20px auto;
+}
+
+.quill {
+  background-color: #ffffff;
+}
+
+.submitblog button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 8px;
+  margin-left:30px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.submitblog button:hover {
+  background-color: #0056b3;
+}
+
+.set-coverImage img {
+  display: block;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.toast-container {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .publish-blog{
+    margin: 10px;
+  }
+  .welcome-content {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  .set-title,
+  .set-desc,
+  .set-coverImage,
+  .set-tag {
+    width: 90%;
+  }
+
+  .texteditor {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .welcome-content {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  .set-title,
+  .set-desc,
+  .set-coverImage,
+  .set-tag {
+    width: 90%;
+  }
+
+  .texteditor {
+    width: 90%;
+  }
+}
